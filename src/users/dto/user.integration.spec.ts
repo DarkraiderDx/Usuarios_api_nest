@@ -133,7 +133,7 @@ describe('Integración de UsersService', () => {
     expect(usuarioEnDb.name).toEqual(usuarioActualizado.name);
     expect(usuarioEnDb.email).toEqual(usuarioActualizado.email);
   });
-
+  
   it('Debería lanzar NotFoundException si el usuario a actualizar no existe', async () => {
     const idInexistente = 999;
     try {
